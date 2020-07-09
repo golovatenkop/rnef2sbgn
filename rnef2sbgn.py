@@ -219,6 +219,7 @@ def compile_sbgn(scene, classmap):
             bbox = et.Element('bbox')
             for k in ['x', 'y', 'w', 'h']:
                 bbox.attrib[k] = str(scene['glyphs'][_id][k])
+                bbox.attrib['y'] = str(-scene['glyphs'][_id]['y']) # Y coordinate in SBGN is supposed to be inverted
             glyph.append(bbox)
             _map.append(glyph)
     for _id in scene['arcs']:
@@ -234,19 +235,21 @@ def compile_sbgn(scene, classmap):
         participants.sort(key=lambda x: x[1])
         [arc.attrib['source'], arc.attrib['target']] = [scene['g_map'][participant[0]] for participant in participants]
         arc_start_x = str(scene['glyphs'][scene['g_map_rev'][arc.attrib['source']][0]]['x'])
-        arc_start_y = str(scene['glyphs'][scene['g_map_rev'][arc.attrib['source']][0]]['y'])
+        arc_start_y = str(-scene['glyphs'][scene['g_map_rev'][arc.attrib['source']][0]]['y']) # Y coordinate in SBGN is supposed to be inverted
         arc_end_x = str(scene['glyphs'][scene['g_map_rev'][arc.attrib['target']][0]]['x'])
-        arc_end_y = str(scene['glyphs'][scene['g_map_rev'][arc.attrib['target']][0]]['y'])
+        arc_end_y = str(-scene['glyphs'][scene['g_map_rev'][arc.attrib['target']][0]]['y']) # Y coordinate in SBGN is supposed to be inverted
         arc_points_source, arc_points_target, arc_points = [], [], []
-        # TODO: unuglify
-        for participant_id in scene['arcs'][_id]:
-            participant = scene['arcs'][_id][participant_id]
-            for p in range(0, len(participant['points']), 2):
-                if participant['endpoint'] == 'target':
-                    arc_points_target.append((str(participant['points'][p]), str(participant['points'][p+1])))
-                else:
-                    arc_points_source.append((str(participant['points'][p]), str(participant['points'][p+1])))
-        arc_points = arc_points_source + arc_points_target
+        
+        # The following block attempts to transfer the inflections of arcs, but the result looks ugly
+        # for participant_id in scene['arcs'][_id]:
+        #     participant = scene['arcs'][_id][participant_id]
+        #     for p in range(0, len(participant['points']), 2):
+        #         if participant['endpoint'] == 'target':
+        #             arc_points_target.append((str(participant['points'][p]), str(-participant['points'][p+1]))) # Y coordinate in SBGN is supposed to be inverted
+        #         else:
+        #             arc_points_source.append((str(participant['points'][p]), str(-participant['points'][p+1]))) # Y coordinate in SBGN is supposed to be inverted
+        
+        arc_points = arc_points_source + arc_points_target        
         arc_start = et.Element('start')
         arc_start.attrib['x'], arc_start.attrib['y'] = arc_start_x, arc_start_y
         arc.append(arc_start)
