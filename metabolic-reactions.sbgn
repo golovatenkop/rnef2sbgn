@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.3">
+    <map language="activity flow">
+        <glyph class="biological activity" id="glyph1">
+            <label text="pyruvate"/>
+            <bbox h="23.71707" w="50.389559999999996" x="782.35101" y="384.06207"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph2">
+            <label text="lactate"/>
+            <bbox h="23.71707" w="48.79968" x="782.35101" y="504.06207"/>
+        </glyph>
+        <glyph class="and" id="glyph3">
+            <label text="no-effect"/>
+            <bbox h="7.11513" w="7.11513" x="751.6375800000001" y="444.36459"/>
+        </glyph>
+        <glyph class="and" id="glyph4">
+            <label text="no-effect"/>
+            <bbox h="7.11513" w="7.11513" x="626.68245" y="444.16323"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph5">
+            <label text="NAD+"/>
+            <bbox h="23.71707" w="23.71707" x="692.35101" y="444.06207"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph6">
+            <label text="L-lactate dehydrogenase"/>
+            <bbox h="33.17445" w="38.15061" x="812.35101" y="444.06207"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph7">
+            <label text="NADH dehydrogenase"/>
+            <bbox h="33.17445" w="38.15061" x="572.35101" y="444.06207"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph8">
+            <label text="H+"/>
+            <bbox h="23.71707" w="23.71707" x="692.35101" y="504.06207"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph9">
+            <label text="NADH"/>
+            <bbox h="23.71707" w="23.71707" x="692.35101" y="384.06207"/>
+        </glyph>
+        <arc class="logic arc" id="arc1" source="glyph7" target="glyph4">
+            <start x="572.35101" y="444.06207"/>
+            <end x="626.68245" y="444.16323"/>
+        </arc>
+        <arc class="logic arc" id="arc2" source="glyph4" target="glyph9">
+            <start x="626.68245" y="444.16323"/>
+            <end x="692.35101" y="384.06207"/>
+        </arc>
+        <arc class="logic arc" id="arc3" source="glyph4" target="glyph8">
+            <start x="626.68245" y="444.16323"/>
+            <end x="692.35101" y="504.06207"/>
+        </arc>
+        <arc class="logic arc" id="arc4" source="glyph4" target="glyph5">
+            <start x="626.68245" y="444.16323"/>
+            <end x="692.35101" y="444.06207"/>
+        </arc>
+        <arc class="positive influence" id="arc5" source="glyph3" target="glyph8">
+            <start x="751.6375800000001" y="444.36459"/>
+            <end x="692.35101" y="504.06207"/>
+        </arc>
+        <arc class="positive influence" id="arc6" source="glyph3" target="glyph5">
+            <start x="751.6375800000001" y="444.36459"/>
+            <end x="692.35101" y="444.06207"/>
+        </arc>
+        <arc class="positive influence" id="arc7" source="glyph3" target="glyph9">
+            <start x="751.6375800000001" y="444.36459"/>
+            <end x="692.35101" y="384.06207"/>
+        </arc>
+        <arc class="logic arc" id="arc8" source="glyph6" target="glyph3">
+            <start x="812.35101" y="444.06207"/>
+            <end x="751.6375800000001" y="444.36459"/>
+        </arc>
+        <arc class="logic arc" id="arc9" source="glyph3" target="glyph1">
+            <start x="751.6375800000001" y="444.36459"/>
+            <end x="782.35101" y="384.06207"/>
+        </arc>
+        <arc class="logic arc" id="arc10" source="glyph3" target="glyph2">
+            <start x="751.6375800000001" y="444.36459"/>
+            <end x="782.35101" y="504.06207"/>
+        </arc>
+    </map>
+</sbgn>

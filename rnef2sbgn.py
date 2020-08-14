@@ -285,9 +285,15 @@ if __name__ == '__main__':
     #fin = './metabolic-reaction.rnef'
     #fout = './metabolic-reaction.sbgn'
 
+    # TODO:
     # does not work as expected for a reaction in context of a pathway
-    fin = './pathway.rnef'
-    fout = './pathway.sbgn'
+    #fin = './pathway.rnef'
+    #fout = './pathway.sbgn'
+
+    # TODO:
+    # in a chain of metabolic reactions, information about sources/targets gets messed up
+    fin = './metabolic-reactions.rnef'
+    fout = './metabolic-reactions.sbgn'
 
     lang = 'activity flow'
     s_plot_scale = 30
