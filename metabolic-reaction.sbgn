@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.3">
+    <map language="activity flow">
+        <glyph class="biological activity" id="glyph1">
+            <label text="NAD+"/>
+            <bbox h="23.71707" w="23.71707" x="931.75746" y="602.75622"/>
+        </glyph>
+        <glyph class="and" id="glyph2">
+            <label text="no-effect"/>
+            <bbox h="7.11513" w="7.11513" x="931.32972" y="562.5961500000001"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph3">
+            <label text="H+"/>
+            <bbox h="23.71707" w="23.71707" x="894.72834" y="579.4536"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph4">
+            <label text="pyruvate"/>
+            <bbox h="23.71707" w="50.389559999999996" x="961.5774" y="626.9590499999999"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph5">
+            <label text="lactate"/>
+            <bbox h="23.71707" w="48.79968" x="901.43685" y="625.85016"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph6">
+            <label text="L-lactate dehydrogenase"/>
+            <bbox h="33.17445" w="38.15061" x="931.51131" y="477.48762"/>
+        </glyph>
+        <glyph class="biological activity" id="glyph7">
+            <label text="NADH"/>
+            <bbox h="23.71707" w="23.71707" x="968.2963800000001" y="579.53913"/>
+        </glyph>
+        <arc class="positive influence" id="arc1" source="glyph2" target="glyph3">
+            <start x="931.32972" y="562.5961500000001"/>
+            <end x="894.72834" y="579.4536"/>
+        </arc>
+        <arc class="positive influence" id="arc2" source="glyph2" target="glyph1">
+            <start x="931.32972" y="562.5961500000001"/>
+            <end x="931.75746" y="602.75622"/>
+        </arc>
+        <arc class="positive influence" id="arc3" source="glyph2" target="glyph7">
+            <start x="931.32972" y="562.5961500000001"/>
+            <end x="968.2963800000001" y="579.53913"/>
+        </arc>
+        <arc class="logic arc" id="arc4" source="glyph6" target="glyph2">
+            <start x="931.51131" y="477.48762"/>
+            <end x="931.32972" y="562.5961500000001"/>
+        </arc>
+        <arc class="logic arc" id="arc5" source="glyph2" target="glyph4">
+            <start x="931.32972" y="562.5961500000001"/>
+            <end x="961.5774" y="626.9590499999999"/>
+        </arc>
+        <arc class="logic arc" id="arc6" source="glyph2" target="glyph5">
+            <start x="931.32972" y="562.5961500000001"/>
+            <end x="901.43685" y="625.85016"/>
+        </arc>
+    </map>
+</sbgn>

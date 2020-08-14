@@ -31,20 +31,30 @@
     -->
     <!-- Entities -->
     <entity rnef="Cell Object" sbgn="biological activity" />
+    <entity rnef="CellObject" sbgn="biological activity" />
     <entity rnef="Cell Process" sbgn="phenotype" />
+    <entity rnef="CellProcess" sbgn="phenotype" />
     <entity rnef="CellLineName" sbgn="unspecified entity" />
+    <entity rnef="CellLine" sbgn="unspecified entity" />
+    <entity rnef="Cell Line" sbgn="unspecified entity" />
+    <entity rnef="Cell Type" sbgn="unspecified entity" />
     <entity rnef="CellType" sbgn="unspecified entity" />
     <entity rnef="Clinical Parameter" sbgn="phenotype" />
+    <entity rnef="ClinicalParameter" sbgn="phenotype" />
     <entity rnef="Complex" sbgn="biological activity" />
     <entity rnef="Disease" sbgn="phenotype" />
     <entity rnef="Functional Class" sbgn="biological activity" />
+    <entity rnef="FunctionalClass" sbgn="biological activity" />
     <entity rnef="Genetic Variant" sbgn="biological activity" />
+    <entity rnef="GeneticVariant" sbgn="biological activity" />
     <entity rnef="Mutation" sbgn="phenotype" />
     <entity rnef="Organ" sbgn="unspecified entity" />
     <entity rnef="Organism" sbgn="unspecified entity" />
     <entity rnef="Protein" sbgn="biological activity" />
+    <entity rnef="Semantic Concept" sbgn="unspecified entity" />
     <entity rnef="SemanticConcept" sbgn="unspecified entity" />
     <entity rnef="Small Molecule" sbgn="biological activity" />
+    <entity rnef="SmallMolecule" sbgn="biological activity" />
     <entity rnef="Tissue" sbgn="unspecified entity" />
     <entity rnef="Treatment" sbgn="unspecified entity" />
     <entity rnef="Virus" sbgn="biological activity" />
@@ -52,7 +62,10 @@
     <relation rnef="Binding" effect="default" sbgn="unknown influence" />
     <relation rnef="Biomarker" effect="default" sbgn="logic arc" />
     <relation rnef="CellExpression" effect="default" sbgn="logic arc" />
-    <relation rnef="ChemicalReaction" effect="default" sbgn="unknown influence" />
+    <relation rnef="ChemicalReaction" effect="default" sbgn="positive influence" />
+    <relation rnef="ChemicalReaction" effect="no-effect" sbgn="logic arc" />
+    <relation rnef="ChemicalReaction" effect="positive" sbgn="positive influence" />
+    <relation rnef="ChemicalReaction" effect="negative" sbgn="negative influence" />
     <relation rnef="ClinicalTrial" effect="default" sbgn="unknown influence" />
     <relation rnef="DirectRegulation" effect="positive" sbgn="positive influence" />
     <relation rnef="DirectRegulation" effect="negative" sbgn="negative influence" />
@@ -117,20 +130,30 @@
     -->
     <!-- Entities -->
     <entity rnef="Cell Object" sbgn="entity" />
+    <entity rnef="CellObject" sbgn="entity" />
     <entity rnef="Cell Process" sbgn="entity" />
+    <entity rnef="CellProcess" sbgn="entity" />
     <entity rnef="CellLineName" sbgn="entity" />
+    <entity rnef="CellLine" sbgn="entity" />
+    <entity rnef="Cell Line" sbgn="entity" />
+    <entity rnef="Cell Type" sbgn="entity" />
     <entity rnef="CellType" sbgn="entity" />
     <entity rnef="Clinical Parameter" sbgn="entity" />
+    <entity rnef="ClinicalParameter" sbgn="entity" />
     <entity rnef="Complex" sbgn="entity" />
     <entity rnef="Disease" sbgn="entity" />
     <entity rnef="Functional Class" sbgn="entity" />
+    <entity rnef="FunctionalClass" sbgn="entity" />
     <entity rnef="Genetic Variant" sbgn="entity" />
+    <entity rnef="GeneticVariant" sbgn="entity" />
     <entity rnef="Mutation" sbgn="entity" />
     <entity rnef="Organ" sbgn="entity" />
     <entity rnef="Organism" sbgn="entity" />
     <entity rnef="Protein" sbgn="entity" />
+    <entity rnef="Semantic Concept" sbgn="entity" />
     <entity rnef="SemanticConcept" sbgn="entity" />
     <entity rnef="Small Molecule" sbgn="entity" />
+    <entity rnef="SmallMolecule" sbgn="entity" />
     <entity rnef="Tissue" sbgn="entity" />
     <entity rnef="Treatment" sbgn="entity" />
     <entity rnef="Virus" sbgn="entity" />
@@ -200,20 +223,30 @@
     -->
     <!-- Entities -->
     <entity rnef="Cell Object" sbgn="compartment" />
+    <entity rnef="CellObject" sbgn="compartment" />
     <entity rnef="Cell Process" sbgn="process" />
+    <entity rnef="CellProcess" sbgn="process" />
     <entity rnef="CellLineName" sbgn="unspecified entity" />
+    <entity rnef="CellLine" sbgn="unspecified entity" />
+    <entity rnef="Cell Line" sbgn="unspecified entity" />
+    <entity rnef="Cell Type" sbgn="unspecified entity" />
     <entity rnef="CellType" sbgn="unspecified entity" />
     <entity rnef="Clinical Parameter" sbgn="phenotype" />
+    <entity rnef="ClinicalParameter" sbgn="phenotype" />
     <entity rnef="Complex" sbgn="complex" />
     <entity rnef="Disease" sbgn="phenotype" />
     <entity rnef="Functional Class" sbgn="unspecified entity" />
+    <entity rnef="FunctionalClass" sbgn="unspecified entity" />
     <entity rnef="Genetic Variant" sbgn="unspecified entity" />
+    <entity rnef="GeneticVariant" sbgn="unspecified entity" />
     <entity rnef="Mutation" sbgn="unspecified entity" />
     <entity rnef="Organ" sbgn="unspecified entity" />
     <entity rnef="Organism" sbgn="unspecified entity" />
     <entity rnef="Protein" sbgn="macromolecule" />
+    <entity rnef="Semantic Concept" sbgn="unspecified entity" />
     <entity rnef="SemanticConcept" sbgn="unspecified entity" />
     <entity rnef="Small Molecule" sbgn="simple chemical" />
+    <entity rnef="SmallMolecule" sbgn="simple chemical" />
     <entity rnef="Tissue" sbgn="unspecified entity" />
     <entity rnef="Treatment" sbgn="unspecified entity" />
     <entity rnef="Virus" sbgn="unspecified entity" />

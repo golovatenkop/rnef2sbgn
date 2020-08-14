@@ -26,7 +26,7 @@
             <bbox h="23.71707" w="69.26139" x="24.61104" y="-904.75791"/>
         </glyph>
         <glyph class="and" id="glyph9">
-            <label text="default"/>
+            <label text="no-effect"/>
             <bbox h="7.11513" w="7.11513" x="279.43659" y="-934.75764"/>
         </glyph>
         <glyph class="biological activity" id="glyph10">
@@ -54,7 +54,7 @@
             <bbox h="33.17445" w="38.15061" x="-65.38896" y="-1099.75791"/>
         </glyph>
         <glyph class="and" id="glyph16">
-            <label text="default"/>
+            <label text="no-effect"/>
             <bbox h="7.11513" w="7.11513" x="535.5209699999999" y="-1011.1247699999999"/>
         </glyph>
         <glyph class="biological activity" id="glyph17">
@@ -66,7 +66,7 @@
             <bbox h="23.71707" w="50.389559999999996" x="654.61104" y="-1054.75791"/>
         </glyph>
         <glyph class="and" id="glyph19">
-            <label text="default"/>
+            <label text="no-effect"/>
             <bbox h="7.11513" w="7.11513" x="579.60924" y="-1144.01592"/>
         </glyph>
         <glyph class="biological activity" id="glyph20">
@@ -102,7 +102,7 @@
             <bbox h="23.71707" w="23.71707" x="579.61104" y="-1069.75791"/>
         </glyph>
         <glyph class="and" id="glyph34">
-            <label text="default"/>
+            <label text="no-effect"/>
             <bbox h="7.11513" w="7.11513" x="-20.83347" y="-935.76237"/>
         </glyph>
         <glyph class="biological activity" id="glyph36">
@@ -162,11 +162,11 @@
             <bbox h="35.57562" w="85.62864" x="324.61104" y="-1114.75791"/>
         </glyph>
         <glyph class="and" id="glyph50">
-            <label text="default"/>
+            <label text="no-effect"/>
             <bbox h="7.11513" w="7.11513" x="338.80308" y="-784.96992"/>
         </glyph>
         <glyph class="and" id="glyph51">
-            <label text="default"/>
+            <label text="no-effect"/>
             <bbox h="7.11513" w="7.11513" x="384.70464" y="-934.26828"/>
         </glyph>
         <glyph class="biological activity" id="glyph53">
@@ -178,7 +178,7 @@
             <bbox h="23.71707" w="23.71707" x="579.61104" y="-919.75791"/>
         </glyph>
         <glyph class="and" id="glyph55">
-            <label text="default"/>
+            <label text="no-effect"/>
             <bbox h="7.11513" w="7.11513" x="626.16711" y="-1009.6331399999999"/>
         </glyph>
         <glyph class="biological activity" id="glyph56">
@@ -417,7 +417,7 @@
             <start x="129.61104" y="-1174.75791"/>
             <end x="69.61104" y="-1084.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc38" source="glyph7" target="glyph3">
+        <arc class="positive influence" id="arc38" source="glyph7" target="glyph3">
             <start x="219.61104" y="-1084.75791"/>
             <end x="129.61104" y="-1174.75791"/>
         </arc>
@@ -497,115 +497,115 @@
             <start x="24.61104" y="-964.75791"/>
             <end x="24.61104" y="-1024.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc58" source="glyph114" target="glyph115">
+        <arc class="positive influence" id="arc58" source="glyph114" target="glyph115">
             <start x="-65.38896" y="-1024.75791"/>
             <end x="-155.38896" y="-934.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc59" source="glyph117" target="glyph118">
+        <arc class="positive influence" id="arc59" source="glyph117" target="glyph118">
             <start x="459.61104" y="-1009.75791"/>
             <end x="339.61104" y="-934.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc60" source="glyph120" target="glyph121">
+        <arc class="positive influence" id="arc60" source="glyph120" target="glyph121">
             <start x="279.61104" y="-799.75791"/>
             <end x="384.61104" y="-799.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc61" source="glyph31" target="glyph19">
+        <arc class="logic arc" id="arc61" source="glyph31" target="glyph19">
             <start x="579.61104" y="-1069.75791"/>
             <end x="579.60924" y="-1144.01592"/>
         </arc>
-        <arc class="unknown influence" id="arc62" source="glyph19" target="glyph5">
+        <arc class="logic arc" id="arc62" source="glyph19" target="glyph5">
             <start x="579.60924" y="-1144.01592"/>
             <end x="654.61104" y="-1144.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc63" source="glyph47" target="glyph19">
+        <arc class="logic arc" id="arc63" source="glyph47" target="glyph19">
             <start x="519.61104" y="-1144.75791"/>
             <end x="579.60924" y="-1144.01592"/>
         </arc>
-        <arc class="unknown influence" id="arc64" source="glyph34" target="glyph83">
+        <arc class="positive influence" id="arc64" source="glyph34" target="glyph83">
             <start x="-20.83347" y="-935.76237"/>
             <end x="24.61104" y="-964.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc65" source="glyph34" target="glyph8">
+        <arc class="positive influence" id="arc65" source="glyph34" target="glyph8">
             <start x="-20.83347" y="-935.76237"/>
             <end x="24.61104" y="-904.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc66" source="glyph39" target="glyph34">
+        <arc class="logic arc" id="arc66" source="glyph39" target="glyph34">
             <start x="-65.38896" y="-934.75791"/>
             <end x="-20.83347" y="-935.76237"/>
         </arc>
-        <arc class="unknown influence" id="arc67" source="glyph4" target="glyph9">
+        <arc class="logic arc" id="arc67" source="glyph4" target="glyph9">
             <start x="279.61104" y="-964.75791"/>
             <end x="279.43659" y="-934.75764"/>
         </arc>
-        <arc class="unknown influence" id="arc68" source="glyph62" target="glyph9">
+        <arc class="logic arc" id="arc68" source="glyph62" target="glyph9">
             <start x="279.61104" y="-844.75791"/>
             <end x="279.43659" y="-934.75764"/>
         </arc>
-        <arc class="unknown influence" id="arc69" source="glyph9" target="glyph118">
+        <arc class="logic arc" id="arc69" source="glyph9" target="glyph118">
             <start x="279.43659" y="-934.75764"/>
             <end x="339.61104" y="-934.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc70" source="glyph50" target="glyph10">
+        <arc class="positive influence" id="arc70" source="glyph50" target="glyph10">
             <start x="338.80308" y="-784.96992"/>
             <end x="459.61104" y="-784.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc71" source="glyph118" target="glyph50">
+        <arc class="logic arc" id="arc71" source="glyph118" target="glyph50">
             <start x="339.61104" y="-934.75791"/>
             <end x="338.80308" y="-784.96992"/>
         </arc>
-        <arc class="unknown influence" id="arc72" source="glyph82" target="glyph50">
+        <arc class="logic arc" id="arc72" source="glyph82" target="glyph50">
             <start x="309.61104" y="-754.75791"/>
             <end x="338.80308" y="-784.96992"/>
         </arc>
-        <arc class="unknown influence" id="arc73" source="glyph46" target="glyph16">
+        <arc class="logic arc" id="arc73" source="glyph46" target="glyph16">
             <start x="504.61103999999995" y="-934.75791"/>
             <end x="535.5209699999999" y="-1011.1247699999999"/>
         </arc>
-        <arc class="unknown influence" id="arc74" source="glyph16" target="glyph31">
+        <arc class="logic arc" id="arc74" source="glyph16" target="glyph31">
             <start x="535.5209699999999" y="-1011.1247699999999"/>
             <end x="579.61104" y="-1069.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc75" source="glyph16" target="glyph54">
+        <arc class="logic arc" id="arc75" source="glyph16" target="glyph54">
             <start x="535.5209699999999" y="-1011.1247699999999"/>
             <end x="579.61104" y="-919.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc76" source="glyph16" target="glyph6">
+        <arc class="logic arc" id="arc76" source="glyph16" target="glyph6">
             <start x="535.5209699999999" y="-1011.1247699999999"/>
             <end x="579.61104" y="-1009.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc77" source="glyph56" target="glyph55">
+        <arc class="logic arc" id="arc77" source="glyph56" target="glyph55">
             <start x="684.61104" y="-1009.75791"/>
             <end x="626.16711" y="-1009.6331399999999"/>
         </arc>
-        <arc class="unknown influence" id="arc78" source="glyph55" target="glyph17">
+        <arc class="logic arc" id="arc78" source="glyph55" target="glyph17">
             <start x="626.16711" y="-1009.6331399999999"/>
             <end x="654.61104" y="-964.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc79" source="glyph55" target="glyph31">
+        <arc class="logic arc" id="arc79" source="glyph55" target="glyph31">
             <start x="626.16711" y="-1009.6331399999999"/>
             <end x="579.61104" y="-1069.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc80" source="glyph55" target="glyph18">
+        <arc class="logic arc" id="arc80" source="glyph55" target="glyph18">
             <start x="626.16711" y="-1009.6331399999999"/>
             <end x="654.61104" y="-1054.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc81" source="glyph55" target="glyph54">
+        <arc class="logic arc" id="arc81" source="glyph55" target="glyph54">
             <start x="626.16711" y="-1009.6331399999999"/>
             <end x="579.61104" y="-919.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc82" source="glyph55" target="glyph6">
+        <arc class="logic arc" id="arc82" source="glyph55" target="glyph6">
             <start x="626.16711" y="-1009.6331399999999"/>
             <end x="579.61104" y="-1009.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc83" source="glyph118" target="glyph51">
+        <arc class="logic arc" id="arc83" source="glyph118" target="glyph51">
             <start x="339.61104" y="-934.75791"/>
             <end x="384.70464" y="-934.26828"/>
         </arc>
-        <arc class="unknown influence" id="arc84" source="glyph51" target="glyph11">
+        <arc class="logic arc" id="arc84" source="glyph51" target="glyph11">
             <start x="384.70464" y="-934.26828"/>
             <end x="444.61104" y="-934.75791"/>
         </arc>
-        <arc class="unknown influence" id="arc85" source="glyph121" target="glyph51">
+        <arc class="logic arc" id="arc85" source="glyph121" target="glyph51">
             <start x="384.61104" y="-799.75791"/>
             <end x="384.70464" y="-934.26828"/>
         </arc>

@@ -111,6 +111,10 @@ def read_scene(filename, plot_scale):
             extra_arcs_count = 0
             for participant_id in ret['arcs'][_id]:
                 participant = ret['arcs'][_id][participant_id]
+                if participant['endpoint'] == 'source':
+                    ret['glyphs'][_id]['label'] = 'no-effect'
+                elif participant['endpoint'] == 'target' and ret['glyphs'][_id]['label'] == 'default':
+                    ret['glyphs'][_id]['label'] = 'positive'
                 extra_arcs_count += 1
                 extra_arcs['%s:%d' % (_id, extra_arcs_count)] = {}
                 extra_arcs['%s:%d' % (_id, extra_arcs_count)][participant_id] = participant
@@ -228,7 +232,7 @@ def compile_sbgn(scene, classmap):
         arc = et.Element('arc')
         arc.attrib['id'] = scene['a_map'][_id]
         effect = scene['glyphs'][_id]['label']
-        if effect not in ['negative', 'positive']:
+        if effect not in ['negative', 'positive', 'no-effect'] or effect not in classmap['controls'][scene['glyphs'][_id]['class']]:
             effect = 'default'
         arc.attrib['class'] = classmap['controls'][scene['glyphs'][_id]['class']][effect]
         participants = [(participant_id, scene['arcs'][_id][participant_id]['endpoint']) for participant_id in scene['arcs'][_id]]
@@ -275,6 +279,17 @@ def do_the_job(filename_in, filename_out, language, plot_scale):
 if __name__ == '__main__':
     # Usage:
     # rnef2sbgn.py FILENAME_IN.RNEF FILENAME_OUT SBGN_TYPE PLOT_SCALE
-    [fin, fout, lang, s_plot_scale] = sys.argv[1:5]
+    #[fin, fout, lang, s_plot_scale] = sys.argv[1:5]
+
+    # works for separate reaction
+    #fin = './metabolic-reaction.rnef'
+    #fout = './metabolic-reaction.sbgn'
+
+    # does not work as expected for a reaction in context of a pathway
+    fin = './pathway.rnef'
+    fout = './pathway.sbgn'
+
+    lang = 'activity flow'
+    s_plot_scale = 30
     plot_scale = int(s_plot_scale)
     do_the_job(fin, fout, lang, plot_scale)
